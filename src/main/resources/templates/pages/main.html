@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>问卷</title>
+    <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/wjend.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-dialog.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+<input type="hidden" id="questionNum" th:value="${problems.size()}"/>
+<input type="hidden" id="questionnaireNo" th:value="${questionnaire.no}"/>
+<div class="wjContent clear">
+    <div class="content" id="begin_content" style="">
+        <div class="wjtitle mtop">
+            <h1 th:text="${questionnaire.title}">意见调查问卷</h1>
+        </div>
+        <!--<div class="wjintro mtop ">您好,这是问卷调查</div>-->
+        <div class="wjhr mtop"></div>
+    </div>
+    <div id="question_box">
+        <table th:each="p,p_iterStat : ${problems}" class="wjques maxtop">
+            <tr><th th:text="${p.content}" class="title" style="text-align: left">题干</th></tr>
+            <tr th:if="${opt.problemId == p.id}" th:each="opt : ${optionAll}">
+                <td th:if="${opt.type == 'textarea'}">
+                    <textarea th:id="${opt.id}" th:name="${'q'+p_iterStat.index}" class="form-control"></textarea>
+                </td>
+                <td class="icheckbox_div" th:if="${opt.type != 'textarea'}">
+                    <input th:if="${opt.type=='text'}" th:type="${opt.type}" th:name="${'q'+p_iterStat.index}" th:id="${opt.id}" class="form-control"/>
+                    <input th:if="${opt.type!='text'}" th:type="${opt.type}" th:name="${'q'+p_iterStat.index}" th:id="${opt.id}" th:value="${opt.content}"/>
+                    <span th:text="${opt.content}"></span>
+                </td>
+            </tr>
+        </table>
+        <div class="maxtop">
+            <button class="btn btn-primary" onclick="sumbit()">提交</button>
+        </div>
+    </div>
+</div>
+
+<script src="/asset/js/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap-dialog.min.js"></script>
+<script src="/js/bootstrap-pagy.min.js"></script>
+</body>
+</html>

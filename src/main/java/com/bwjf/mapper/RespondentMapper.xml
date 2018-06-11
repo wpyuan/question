@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bwjf.mapper.RespondentMapper">
+
+    <!-- 添加一条记录 ,并返回主键no -->
+    <insert id="add" parameterType="Respondent" useGeneratedKeys="true" keyProperty="no" keyColumn="no">
+        insert into respondent(name,questionnaireno,nsrsbh) values(#{name},#{questionnaireNo},#{nsrsbh})
+    </insert>
+
+</mapper>

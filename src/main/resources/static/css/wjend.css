@@ -1,0 +1,53 @@
+body, input, textarea, select {
+	font-size: 14px;
+	font-family: "microsoft yahei";
+}
+body, h1, h2, h3, h4, p, ul, ol, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #434a5d;
+	display: block;
+}
+
+body, input, button, select, textarea, td {
+	color: #666666;
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+body {
+	scrollbar-face-color: #efefef;
+	scrollbar-track-color: #efefef;
+	scrollbar-arrow-color: #4c4c4c;
+	scrollbar-shadow-color: #efefef;
+	scrollbar-dark-shadow-color: #efefef;
+	scrollbar-3dlight-color: #efefef;
+	scrollbar-highlight-color: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: inherit;
+	font-family: inherit;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0;
+	text-rendering: optimizelegibility;
+}
+
+/**********wjcontent***********/
+.wjContent {
+	width: 800px;
+	/* min-height: 200px; */
+	background: #fff;
+	margin: 0px auto 10px auto;
+	border: 1px #dbdbdb solid;
+}
+
+
+

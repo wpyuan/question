@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bwjf.mapper.QuestionnaireMapper">
+	<!-- 查询所有信息 -->
+    <select id="getAll" resultType="Questionnaire" >
+      select * from questionnaire
+    </select>
+
+    <!-- 根据编号查-->
+    <select id="getByNo" resultType="Questionnaire" parameterType="String">
+        select * from questionnaire where no = #{questionnaireNo} and state='1'
+    </select>
+    <!-- 根据标题查-->
+    <select id="getByTitle" resultType="Questionnaire" parameterType="String">
+        select * from questionnaire where title = #{title} and state='1'
+    </select>
+
+</mapper>

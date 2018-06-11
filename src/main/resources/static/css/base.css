@@ -1,0 +1,44 @@
+body,h1,h2,h3,h4,p,ul,ol,dl,dd{margin:0; padding:0;}
+table{border-spacing: 0;}
+.wjContent .question img,.wjContent .wjintro img,.wjContent .wjtitle img{display: none;}
+.wjContent .question .geographical img{display: block!important;}
+body{
+	 background:#EFEFEF;
+	 word-break: break-all;
+     word-wrap: break-word;
+	 scrollbar-face-color:#efefef;
+	 scrollbar-track-color:#efefef;
+	 scrollbar-arrow-color:#4c4c4c;
+	 scrollbar-shadow-color:#efefef;
+	 scrollbar-dark-shadow-color:#efefef;
+	 scrollbar-3dlight-color:#efefef;
+	 scrollbar-highlight-color:#efefef;
+	 padding-top: 10px!important;/*wpy*/
+	 background-attachment: fixed !important;
+	 min-width: 800px;
+}
+
+.wjContent p a{ display: inline-block; }
+
+.title { width: 100%; font-size:16px; margin-left: -15px; padding-bottom:8px; position: relative; padding-left: 5px; }
+.icheckbox_div {position:relative;padding-bottom:10px; padding-left: 5px;}
+
+/*********public**************/
+.mtop { margin-top:20px; }
+.maxtop { width: 718px; margin-top:30px; }
+/**********wjcontent***********/
+.wjContent { min-height: 200px; background: #fff; padding: 30px 40px; word-break: normal; z-index: 999; position: relative; }
+.wjtitle {float: left;width: 100%;}
+.wjtitle h1 { color: #4C4C4C; font-size: 18px; text-align: center;}
+.wjintro ,.wjintro { font-size:16px; }
+.wjintro{ float: left;width: 100%;}
+.wjhr { float: left; width:100%; height:3px; background-color:#337ab7;/*分割线样式*/ }
+
+/********题目样式*********/
+.wjques{ padding-left: 15px;/*wpypadding-right: 15px;*/ }
+/********题目样式*********/
+#question_box{width: 100%;}
+#begin_content{ clear: both; overflow: hidden;}
+
+
+
