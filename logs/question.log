@@ -10168,3 +10168,785 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018/06/11-12:04 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getAll- ==>  Preparing: select * from questionnaire 
 2018/06/11-12:04 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getAll- ==> Parameters: 
 2018/06/11-12:04 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getAll- <==      Total: 1
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-08:29 [http-nio-8080-exec-2] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:34 [http-nio-8080-exec-5] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:37 [restartedMain] INFO  com.bwjf.WjdcApplication- Starting WjdcApplication on MICROSO-JI2QQ7D with PID 744 (C:\Users\Administrator\IdeaProjects\question\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-09:37 [restartedMain] INFO  com.bwjf.WjdcApplication- No active profile set, falling back to default profiles: default
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71488c75: startup date [Thu Jun 14 09:37:54 CST 2018]; root of context hierarchy
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8080 (http)
+2018/06/14-09:37 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/06/14-09:37 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.31
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3212 ms
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/06/14-09:37 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71488c75: startup date [Thu Jun 14 09:37:54 CST 2018]; root of context hierarchy
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:37 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018/06/14-09:37 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8080 (http)
+2018/06/14-09:37 [restartedMain] INFO  com.bwjf.WjdcApplication- Started WjdcApplication in 7.717 seconds (JVM running for 11.752)
+2018/06/14-09:43 [restartedMain] INFO  com.bwjf.WjdcApplication- Starting WjdcApplication on MICROSO-JI2QQ7D with PID 14396 (C:\Users\Administrator\IdeaProjects\question\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-09:43 [restartedMain] INFO  com.bwjf.WjdcApplication- No active profile set, falling back to default profiles: default
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79f009c7: startup date [Thu Jun 14 09:43:02 CST 2018]; root of context hierarchy
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8080 (http)
+2018/06/14-09:43 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/06/14-09:43 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.31
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2211 ms
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/06/14-09:43 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79f009c7: startup date [Thu Jun 14 09:43:02 CST 2018]; root of context hierarchy
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:43 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018/06/14-09:43 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8080 (http)
+2018/06/14-09:43 [restartedMain] INFO  com.bwjf.WjdcApplication- Started WjdcApplication in 4.811 seconds (JVM running for 7.081)
+2018/06/14-09:43 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018/06/14-09:43 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2018/06/14-09:43 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018/06/14-09:43 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:43 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:44 [http-nio-8080-exec-8] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.RespondentMapper.add- ==>  Preparing: insert into respondent(name,questionnaireno,nsrsbh) values(?,?,?) 
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.RespondentMapper.add- ==> Parameters: (String), 21(String), (String)
+2018/06/14-09:44 [http-nio-8080-exec-7] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018/06/14-09:44 [http-nio-8080-exec-7] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory- SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 21(String)
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:44 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:46 [restartedMain] INFO  com.bwjf.WjdcApplication- Starting WjdcApplication on MICROSO-JI2QQ7D with PID 4756 (C:\Users\Administrator\IdeaProjects\question\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-09:46 [restartedMain] INFO  com.bwjf.WjdcApplication- No active profile set, falling back to default profiles: default
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2645bcf7: startup date [Thu Jun 14 09:46:45 CST 2018]; root of context hierarchy
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8080 (http)
+2018/06/14-09:46 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/06/14-09:46 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.31
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2911 ms
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/06/14-09:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2645bcf7: startup date [Thu Jun 14 09:46:45 CST 2018]; root of context hierarchy
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:46 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018/06/14-09:46 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8080 (http)
+2018/06/14-09:46 [restartedMain] INFO  com.bwjf.WjdcApplication- Started WjdcApplication in 5.808 seconds (JVM running for 7.464)
+2018/06/14-09:46 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018/06/14-09:46 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2018/06/14-09:46 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018/06/14-09:46 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2018/06/14-09:46 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.RespondentMapper.add- ==>  Preparing: insert into respondent(name,questionnaireno,nsrsbh) values(?,?,?) 
+2018/06/14-09:46 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.RespondentMapper.add- ==> Parameters: 测试用户(String), 21(String), 123456(String)
+2018/06/14-09:46 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.RespondentMapper.add- <==    Updates: 1
+2018/06/14-09:48 [restartedMain] INFO  com.bwjf.WjdcApplication- Starting WjdcApplication on MICROSO-JI2QQ7D with PID 1552 (C:\Users\Administrator\IdeaProjects\question\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-09:48 [restartedMain] INFO  com.bwjf.WjdcApplication- No active profile set, falling back to default profiles: default
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21907994: startup date [Thu Jun 14 09:48:30 CST 2018]; root of context hierarchy
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8080 (http)
+2018/06/14-09:48 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/06/14-09:48 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.31
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2165 ms
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/06/14-09:48 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21907994: startup date [Thu Jun 14 09:48:30 CST 2018]; root of context hierarchy
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-09:48 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018/06/14-09:48 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8080 (http)
+2018/06/14-09:48 [restartedMain] INFO  com.bwjf.WjdcApplication- Started WjdcApplication in 5.136 seconds (JVM running for 8.02)
+2018/06/14-09:48 [http-nio-8080-exec-10] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018/06/14-09:48 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2018/06/14-09:48 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018/06/14-09:48 [http-nio-8080-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:48 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.RespondentMapper.add- ==>  Preparing: insert into respondent(name,questionnaireno,nsrsbh) values(?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.RespondentMapper.add- ==> Parameters: 测试用户(String), 21(String), 123456(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.RespondentMapper.add- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 27(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 21(String), 43(String), 27(String), 7.企业所得税纳税人（核定征收）(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 30(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 22(String), 43(String), 30(String), 3.设置不合理；(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 35(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 23(String), 43(String), 35(String), 2.不清楚;(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 39(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 24(String), 43(String), 39(String), 2.填报简单但系统卡顿(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 45(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 43(String), 45(String), 3.消费税申报表填写(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 46(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 43(String), 46(String), 4.财务报表报送与信息采集(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 55(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 43(String), 55(String), 2.填写麻烦(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 56(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 43(String), 56(String), 3.功能布局不合理(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 63(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 43(String), 63(String), 3.消费税申报表填写(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 64(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 43(String), 64(String), 4.财务报表报送与信息采集(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 72(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 28(String), 43(String), 72(String), 1.系统不稳定(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 73(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 28(String), 43(String), 73(String), 2.填写麻烦(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 80(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 29(String), 43(String), 80(String), 2.本期申报事项提醒(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 81(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 29(String), 43(String), 81(String), 3.本期申报、缴税结果提醒(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 86(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 30(String), 43(String), 86(String), 3.二者都不好(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 88(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 31(String), 43(String), 88(String), 2.89-80（良好）(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 92(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 32(String), 43(String), 92(String), 12312312(String)
+2018/06/14-09:48 [http-nio-8080-exec-7] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:50 [http-nio-8080-exec-4] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==>  Preparing: select * from questionnaire where title = ? and state='1' 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- ==> Parameters: 优化版广西国税网上办税系统意见调查问卷(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.QuestionnaireMapper.getByTitle- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==>  Preparing: select * from problem where questionnaireno = ? and state='1' order by cast(rank as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- ==> Parameters: 21(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.ProblemMapper.getByQuestionnaireNo- <==      Total: 12
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 21(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 22(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 23(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 4
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 24(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 25(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 26(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 27(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 11
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 28(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 7
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 29(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 30(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 3
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 31(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 5
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==>  Preparing: select * from options where problemid = ? and state = '1' order by cast(rowno as int) asc 
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- ==> Parameters: 32(String)
+2018/06/14-09:51 [http-nio-8080-exec-1] DEBUG com.bwjf.mapper.OptionsMapper.getByProblemId- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.RespondentMapper.add- ==>  Preparing: insert into respondent(name,questionnaireno,nsrsbh) values(?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.RespondentMapper.add- ==> Parameters: 广西百旺(String), 21(String), 123456789X(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.RespondentMapper.add- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 21(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 21(String), 44(String), 21(String), 1.增值税一般纳税人；(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 31(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 22(String), 44(String), 31(String), 4.不合理的地方及其他意见建议（请说明）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 33(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 22(String), 44(String), 33(String), 123(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 36(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 23(String), 44(String), 36(String), 3.其他(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 37(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 23(String), 44(String), 37(String), 324(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 41(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 24(String), 44(String), 41(String), 4.其他（请说明）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 42(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 24(String), 44(String), 42(String), 34343(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 46(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 44(String), 46(String), 4.财务报表报送与信息采集(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 47(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 44(String), 47(String), 5.关联业务往来报告表填写(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 52(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 44(String), 52(String), 10.其他系统（请注明）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 53(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 25(String), 44(String), 53(String), 123123(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 55(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 44(String), 55(String), 2.填写麻烦(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 56(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 44(String), 56(String), 3.功能布局不合理(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 59(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 44(String), 59(String), 6.其他（请填写具体意见）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 60(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 26(String), 44(String), 60(String), 12312312(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 63(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 44(String), 63(String), 3.消费税申报表填写(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 64(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 44(String), 64(String), 4.财务报表报送与信息采集(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 70(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 44(String), 70(String), 10.其他系统（请注明）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 71(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 27(String), 44(String), 71(String), 12312(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 74(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 28(String), 44(String), 74(String), 3.功能布局不合理(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 77(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 28(String), 44(String), 77(String), 6.其他（请填写具体意见）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 78(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 28(String), 44(String), 78(String), 12312(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 81(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 29(String), 44(String), 81(String), 3.本期申报、缴税结果提醒(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 82(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 29(String), 44(String), 82(String), 4.其他（请填写具体意见）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 83(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 29(String), 44(String), 83(String), 123435(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 86(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 30(String), 44(String), 86(String), 3.二者都不好(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 89(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 31(String), 44(String), 89(String), 3.79-70（一般）(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==>  Preparing: select * from options where id = ? 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- ==> Parameters: 92(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.OptionsMapper.getById- <==      Total: 1
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==>  Preparing: insert into answer(problemid,respondentno,optionsid,content) values(?,?,?,?) 
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- ==> Parameters: 32(String), 44(String), 92(String), 123124554(String)
+2018/06/14-09:51 [http-nio-8080-exec-10] DEBUG com.bwjf.mapper.AnswerMapper.insert- <==    Updates: 1
+2018/06/14-10:08 [restartedMain] INFO  com.bwjf.WjdcApplication- Starting WjdcApplication on MICROSO-JI2QQ7D with PID 14896 (C:\Users\Administrator\IdeaProjects\question\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-10:08 [restartedMain] INFO  com.bwjf.WjdcApplication- No active profile set, falling back to default profiles: default
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c8cc88c: startup date [Thu Jun 14 10:08:54 CST 2018]; root of context hierarchy
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8080 (http)
+2018/06/14-10:08 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2018/06/14-10:08 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.31
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3267 ms
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018/06/14-10:08 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c8cc88c: startup date [Thu Jun 14 10:08:54 CST 2018]; root of context hierarchy
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-10:08 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-10:08 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-10:09 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2018/06/14-10:09 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2018/06/14-10:09 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2018/06/14-10:09 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018/06/14-10:09 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8080 (http)
+2018/06/14-10:09 [restartedMain] INFO  com.bwjf.WjdcApplication- Started WjdcApplication in 6.818 seconds (JVM running for 9.527)
+2018/06/14-14:43 [main] INFO  com.bwjf.WjdcApplicationTests- Starting WjdcApplicationTests on MICROSO-JI2QQ7D with PID 7044 (started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-14:43 [main] INFO  com.bwjf.WjdcApplicationTests- No active profile set, falling back to default profiles: default
+2018/06/14-14:43 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:43:15 CST 2018]; root of context hierarchy
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:43:15 CST 2018]; root of context hierarchy
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:43 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:43 [main] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-14:43 [main] INFO  com.bwjf.WjdcApplicationTests- Started WjdcApplicationTests in 7.543 seconds (JVM running for 9.465)
+2018/06/14-14:43 [Thread-3] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:43:15 CST 2018]; root of context hierarchy
+2018/06/14-14:46 [main] INFO  com.bwjf.WjdcApplicationTests- Starting WjdcApplicationTests on MICROSO-JI2QQ7D with PID 8868 (started by Administrator in C:\Users\Administrator\IdeaProjects\question)
+2018/06/14-14:46 [main] INFO  com.bwjf.WjdcApplicationTests- No active profile set, falling back to default profiles: default
+2018/06/14-14:46 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:46:47 CST 2018]; root of context hierarchy
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:46:47 CST 2018]; root of context hierarchy
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/add]}" onto public java.lang.String com.bwjf.controller.AdminController.add(org.springframework.ui.Model)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/show]}" onto public java.lang.String com.bwjf.controller.AdminController.show(org.springframework.ui.Model)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/admin/edit]}" onto public java.lang.String com.bwjf.controller.AdminController.edit(org.springframework.ui.Model)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/show]}" onto public java.lang.String com.bwjf.controller.UserController.hello(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/sumbit]}" onto public java.lang.String com.bwjf.controller.UserController.sumbit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:46 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/06/14-14:46 [main] WARN  org.thymeleaf.templatemode.TemplateMode- [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018/06/14-14:46 [main] INFO  com.bwjf.WjdcApplicationTests- Started WjdcApplicationTests in 9.197 seconds (JVM running for 11.136)
+2018/06/14-14:46 [Thread-3] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@22ef9844: startup date [Thu Jun 14 14:46:47 CST 2018]; root of context hierarchy

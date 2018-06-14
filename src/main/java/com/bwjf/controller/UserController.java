@@ -38,7 +38,7 @@ public class UserController {
      * @return main.html
      */
     @RequestMapping("/show")
-    public String hello(Model model,String questionnaireNo){
+    public String hello(Model model,String questionnaireNo,String nsrsbh,String name){
         System.out.println("----show---");
         //1.根据questionnaireNo获取调查问卷
         String questionnaire = null;
@@ -97,7 +97,9 @@ public class UserController {
         model.addAttribute("questionnaire",questionnaire1);
         model.addAttribute("problems",problems);
         model.addAttribute("optionAll",optionAll);
-        return "/pages/main";
+        model.addAttribute("nsrsbh",nsrsbh);
+        model.addAttribute("name",name);
+        return "pages/main";
     }
 
     /**
@@ -107,14 +109,24 @@ public class UserController {
      */
     @RequestMapping("/sumbit")
     @ResponseBody
-    public String sumbit(String answerList,String questionnaireNo){
+    public String sumbit(String answerList,String questionnaireNo,String nsrsbh,String name){
         System.out.println("----sumbit---");
         //System.out.println("answerList:"+answerList.toString());
         //System.out.println(questionnaireNo);
         Respondent respondent = new Respondent();
-        respondent.setName("测试用户");
         respondent.setQuestionnaireNo(questionnaireNo);
-        respondent.setNsrsbh("123456");
+        if (nsrsbh==""){
+            respondent.setNsrsbh("123456");
+        }else {
+            respondent.setNsrsbh(nsrsbh);
+        }
+        if (name==""){
+            respondent.setName("测试用户");
+        }else{
+            respondent.setName(name);
+        }
+
+
         try {
             respondentService.add(respondent);
         } catch (Exception e) {

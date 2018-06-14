@@ -118,7 +118,9 @@ function sumbit(){
         url:"/sumbit.do",
         data:{
             "answerList":answerList,
-            "questionnaireNo":$('#questionnaireNo').val()
+            "questionnaireNo":$('#questionnaireNo').val(),
+            "name":$('#qymc').val(),
+            "nsrsbh":$('#nsrsbh').val()
         },
         type:"post",
         success:function(result){
